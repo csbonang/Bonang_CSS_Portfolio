@@ -102,7 +102,7 @@ body
         }
         .Work > a > #work1
         {
-            border-left: thick solid var(--dark);
+            /* border-left: thick solid var(--dark); */
             grid-area: work; 
             position:relative;  
         }
@@ -154,13 +154,15 @@ body
         height: 500px; 
     }
 
-    /*
-    #Work >img 
+    #img1
     {
         border-left: thick solid var(--dark);
-        position:absolute;
     }
-    */ 
+    #img2
+    {
+        border-left: thick solid var(--dark);
+    }
 
+    
 
 
