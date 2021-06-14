@@ -1,0 +1,138 @@
+:root 
+{
+  --dark: #13293d;
+  --light: #fff;
+
+}
+body
+{
+    width: 100%; 
+    /* margin:auto;  */
+    /*scroll animation*/
+    scroll-behavior: smooth;
+}
+/* NAV BAR */
+    /*header:: nav-bar's text styled here. */ 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        /* use CSS var() function to reference a variable created above */
+        background-color: var(--dark);
+        color: var(--light);
+    }
+    /*a:: links to each section in the nav bar are styled here. T*/ 
+    a 
+    {
+        display: inline;
+        color: var(--light);
+        font-size: 120%;
+        font-weight: bold;
+        padding-right: 30px; 
+        /*ensures that there is no line underneath navigation text*/ 
+        text-decoration:none; 
+    }
+
+
+/*Layout:: Positions relative to the grid layout*/
+    header
+    {
+        grid-area: header;
+    }
+
+    /*Titles*/ 
+        main > section > h1 
+        {
+            margin-left: 15%; 
+            display: inline-block; 
+            line-height: normal;
+            font-size: 250%;
+        }
+        #about_me_title
+        {
+            grid-area: about_me_title; 
+            border-spacing: 15px;
+        }
+        #work_title
+        {
+            grid-area: work_title; 
+            border-spacing: 15px;
+            /* margin-left: 20%; */
+
+        }
+        #contactMe_title
+        {
+            grid-area: contactMe_title; 
+            border-spacing: 15px;
+            /* margin-left: 13%; */
+
+        }
+    /*Content*/
+        main > section > p
+        {
+            /* margin-left: 0%; */
+            display: inline-block; 
+            line-height: normal;
+            font-size: 150%;
+            /* border-left:: vertical border between paragraph and header*/
+            border-left: thick solid var(--dark);
+            /* Ensures that the content position is next to the header */
+            position:absolute;
+            /* Prevents text from overlapping with image */
+            padding-right: 200px; 
+        }
+        #about_me_content
+        {
+            grid-area: about_me; 
+            
+            /* right: 0px; */
+            
+            /*border-left: thick solid var(--dark);*/
+        }
+        #work_content 
+        {
+            grid-area: work; 
+            /*border-left: thick solid var(--dark);*/
+           /* margin-left: 243px; */
+            
+        }
+        #contactMe_content
+        {
+            grid-area: contact_me; 
+            /* border-left: thick solid var(--dark); */
+            /*margin-left: 180px; */  
+        }
+
+
+/*main:: includes the grid template and layout of sub-sections*/
+    main 
+    {
+        display: grid;
+        grid-template-areas:
+        "header header header header header header"
+        "about_me_title about_me_content about_me_content about_me_content"
+        "work_title work_content work_content work_content"
+        "contactMe_title contactMe_content contactMe_content contactMe_content";
+        grid-gap: 1.5 rem; 
+        grid-template-columns: 10fr fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        width: 100%
+    }
+/* AboutMe image*/
+    /* Styled in a rounded shape  */
+    #AboutMe > img
+    {
+        border-radius: 50%;
+        /* position:absolute; */
+        margin-right: 0rem;
+    }
+    /*Position to the right*/
+    img.right 
+    {
+        float:right; 
+        padding:5px;
+    }
+
+
+
