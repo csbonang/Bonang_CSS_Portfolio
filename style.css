@@ -1,168 +1,178 @@
+HTML CSSResult Skip Results Iframe 
+EDIT ON 
+body {
+ margin: 40px;
+}
 :root 
 {
-  --dark: #13293d;
-  --light: #fff;
-  --border: 15px; 
+ --dark: #13293d;
+ --light: #fff;
+ --border: 15px; 
+ --blue: rgb(30, 30, 116); 
 
 }
-body
-{
-    width: 100%; 
-    scroll-behavior: smooth;
-    /*Chaning font*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    font-style: sans-serif;
+/* grid-area:: assigns each class to a section on the grid*/
+ .sidebar {
+   grid-area: sidebar;
+   border-right: thick solid var(--dark);
+ }
+ .sidebar1{
+   grid-area: sidebar1;
+   border-right: thick solid var(--dark);
+ }
+
+ .content {
+   grid-area: content;
+ }
+ .content1{
+   grid-area: content1;
+ }
+
+ .header {
+   grid-area: header;
+   background: url(images/code_background.jpg); 
+ }
+
+ .footer {
+   grid-area: footer;
+   border-right: thick solid var(--dark);
+ }
+ .footer_content{
+   grid-area:footer_content; 
+ }
+
+/*wrapper:: used grid to layout each section (assigned above) on the grid*/ 
+.wrapper {
+ display: grid;
+ grid-gap: 50px;
+ grid-template-columns: 230px 120px 120px;
+ grid-template-areas:
+  "header header header header"
+  "sidebar content content content"
+  "sidebar1 content1 content1 content1"
+  "footer  footer_content footer_content footer_content";
+ background-color:var(--light);
+ color: #444;
+ /* padding-left: 8%; */
 }
-/* NAV BAR */
-    /*header:: nav-bar's text styled here. */ 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3%;
-        /* use CSS var() function to reference a variable created above */
-        /* background-color:darkblue; */
-        background: url(images/code_background.jpg); 
-        color: var(--light);
-    }
-    header > h1 
-    {
-      font-size: 800%;
-    }
-    /*a:: links to each section in the nav bar are styled here. T*/ 
-    a 
-    {
-        display: inline;
-        color: var(--light);
-        font-size: 350%;
-        font-weight: bold;
-        padding-right: 30px;
-        /*ensures that there is no line underneath navigation text*/ 
-        text-decoration:none; 
-    }
-
-/*Layout:: Positions relative to the grid layout*/
-    header
-    {
-        grid-area: header;
-    }
-    /*Ensures that the AboutMe section has enough distance from header*/
-    #AboutMe_Section
-    {
-        padding: 2%; 
-    }
-    /*Titles*/ 
-        main > section > h1 
-        {
-            margin-left: 15%; 
-            display: inline-block; 
-            line-height: normal;
-            font-size: 500%;
-        }
-        #about_me_title
-        {
-            grid-area: about_me_title; 
-            border-spacing: var(--border);
-        }
-        .Work > #work_title
-        {
-            grid-area: work_title; 
-            border-spacing: var(--border); 
-            float:left; 
-        }
-
-        #contactMe_title
-        {
-            grid-area: contactMe_title; 
-            border-spacing: var(--border);
-            /* margin-left: 13%; */
-
-        }
-    /*Content*/
-        main > section > p
-        {
-            /* margin-left: 0%; */
-            display: inline-block; 
-            line-height: normal;
-            font-size: 350%;
-            /* border-left:: vertical border between paragraph and header*/
-            border-left: thick solid var(--dark);
-            /* Ensures that the content position is next to the header */
-            position:absolute; 
-            /* Prevents text from overlapping with image */
-            padding-right: 600px; 
-        }
-        #about_me_content
-        {
-            grid-area: about_me; 
-            
-            /* right: 0px; */
-            
-            /*border-left: thick solid var(--dark);*/
-        }
-        .Work > a > #work1
-        {
-            /* border-left: thick solid var(--dark); */
-            grid-area: work; 
-            position:relative;  
-        }
-        .Work > a > #work2
-        {
-            border-left: thick solid var(--dark);
-            grid-area: work; 
-            position:relative;  
-        }
-        #contactMe_content
-        {
-            grid-area: contact_me; 
-            /* border-left: thick solid var(--dark); */
-            /*margin-left: 180px; */ 
-        }
 
 
-/*main:: includes the grid template and layout of sub-sections*/
+.box {
+ background-color: var(--light);
+ color: var(--blue);
+ /* border-radius: 5px; */
+ padding: 10px;
+ font-size: 150%;
+}
 
-    main 
-    {
-        display: grid;
-        grid-template-areas:
-        "header header header header header header"
-        "about_me_title about_me_content about_me_content about_me_content"
-        "work_title work work work work work"
-        "contactMe_title contact_me contact_me contact_me";
-        grid-gap: 1.5rem; 
-        grid-template-columns: 10fr fr 1fr 1fr; 
-        grid-auto-rows: minmax(100px, auto);
-        width: 100%; 
-    }
-    
+.header {
+ background-color: #999;
+}
 
-/* AboutMe image*/
-    /* Styled in a rounded shape  */
-    #AboutMe_Section > img
-    {
-        border-radius: 50%;
-        /* position:absolute; */
-        margin-right: 0rem;
-    }
-    /*Position to the right*/
-    img.right 
-    {
-        float:right; 
-        padding:5px;
-        width: 500px;
-        height: 500px; 
-    }
+/*Header styling*/
+   .header > h1
+   {
+       display: inline-block;
+       font-size: 80px;
+       color:var(--light);
+        /*Ensures that name is indented*/
+       padding-left: 3%;
+   }
+   nav
+   {
+       /*position navigation bar to right*/
+       float:right;
+       margin-right: 20px;
+   } 
+   nav > ul > a
+   {
+       display: inline-block;
+       /*ensures no underline is shown*/ 
+       text-decoration:none; 
+       /*sets the color to white*/ 
+       color:white; 
+       /*padding between text*/ 
+       padding-right:30px ;
+       /*aligns with header by adding a small amount of padding*/
+       padding-top: 9%;
+       font-size: 50px;
+   }
 
-    #img1
-    {
-        border-left: thick solid var(--dark);
-    }
-    #img2
-    {
-        border-left: thick solid var(--dark);
-    }
 
-    
+/* Side-bar:: styling side-bar titles*/
+   #section_title
+   {
+     font-size: 60px;
+     color:var(--dark); 
+     text-align: right; 
+   }
+   
+/*About Me*/ 
+   /* Styled in a rounded shape  */
+   /*Position profile picture to the right*/
+   img.right 
+   {
+       border-radius: 50%;
+       float:right; 
+       padding:5px;
+       width: 300px;
+       height: 330px; 
+   }
+   figure
+   {
+       background-image: url(images/work_0.jpg);
+   }
+   #aboutMe_content
+   {
+       font-size: 35px; ;
+   }
+/* Contact Info */
+   #contactMe_info
+   {
+       color:black; 
+       font-size: 50px;
+       text-decoration: underline;
+       text-decoration-color: var(--dark);
+       padding-right: 5%;
+   }
+/* Work */
+   /* Big image:: sets bottom right text */
+   .text_box {
+       position: relative;
+       bottom: 150px;
+       left: 60px;
+       color: white;
+       width: 20%;
+       font-size: 300%;
+   }
+   
+   /* images on te left side */
+   .imgLeft_position 
+   {
+       position:relative; 
+       float:left; 
+       text-align: center;
+       /* color: white; */
+   }
+   /* images on te right side */
+   .imgRight_position 
+   {
+       position: relative;
+       float:right; 
+       text-align: center;
+       /* color: white;  */
+   }
+   /* text set to smaller images */
+   .text_box1 {
+       position: absolute;
+       bottom: 8px;
+       left: 16px;
+       color:var(--light); 
+       font-size: 200%;
+   }
+
+
+
+
 
 
