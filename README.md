@@ -21,8 +21,8 @@ Each section of the portfolio has an assigned class to a specific grid area on t
 Using a grid strengthens the flexibility of the portfolio. To be sure, it simplifies revising and stylizing the program.  
 
 # Screenshot 
-Format: ![Page1](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_1.PNG)
-Format: ![Page2](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_2.PNG)
+Top: ![Page1](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_1.PNG)
+Bottom: ![Page2](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_2.PNG)
 # References
 Grid: 
 https://gridbyexample.com/examples/example12/ <br/>
