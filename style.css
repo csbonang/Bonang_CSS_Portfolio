@@ -62,7 +62,7 @@ body {
  color: var(--blue);
  /* border-radius: 5px; */
  padding: 10px;
- font-size: 150%;
+ /* font-size: 150%; */
 }
 
 .header {
@@ -136,31 +136,42 @@ body {
        padding-right: 5%;
    }
 /* Work */
-   /* Big image:: sets bottom right text */
+   /* Big image:: sets the position of the box */
    .text_box {
-       position: relative;
-       bottom: 150px;
-       left: 60px;
-       color: white;
-       width: 20%;
-       font-size: 300%;
+       position: absolute; 
+       bottom: 1%; 
+       left: 3%; 
+       color:white;
+       font-size: 3vw;
    }
    /* big image at top*/
    .img_top
    {
-       width:100%; 
+       width:100%;
+       position:relative;  
+       /*included margin and padding to align with 
+       smaller images below */
+       margin:2%; 
+       padding:1.5%; 
    }
    .img_topImg 
    {
        width:100%; 
    } 
+   /* Images below top */
+   .img_bottomImg
+   {
+       width:90%; 
+       margin:2%; 
+       padding:5%; 
+   }
    /* images on te left side */
    .imgLeft_position 
    {
        position:relative; 
        float:left; 
        text-align: center;
-       /* color: white; */
+       width:50%; 
    }
    /* images on te right side */
    .imgRight_position 
@@ -168,16 +179,17 @@ body {
        position: relative;
        float:right; 
        text-align: center;
-       /* color: white;  */
+       width:50%; 
    }
    /* text set to smaller images */
    .text_box1 {
        position: absolute;
-       bottom: 8px;
-       left: 16px;
-       color:var(--light); 
-       font-size: 200%;
+       bottom: 40%;
+       left: 35%;
+       color:purple;  
+       font-size: 3vw;
    }
+   
 
 
 
