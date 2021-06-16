@@ -73,7 +73,7 @@ body {
    .header > h1
    {
        display: inline-block;
-       font-size: 80px;
+       font-size: 3vw;
        color:var(--light);
         /*Ensures that name is indented*/
        padding-left: 3%;
@@ -95,14 +95,14 @@ body {
        padding-right:30px ;
        /*aligns with header by adding a small amount of padding*/
        padding-top: 9%;
-       font-size: 50px;
+       font-size: 2vw;
    }
 
 
 /* Side-bar:: styling side-bar titles*/
    #section_title
    {
-     font-size: 60px;
+     font-size: 4vw;
      color:var(--dark); 
      text-align: right; 
    }
@@ -124,7 +124,7 @@ body {
    }
    #aboutMe_content
    {
-       font-size: 35px; ;
+       font-size: 2vw; 
    }
 /* Contact Info */
    #contactMe_info
