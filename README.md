@@ -1,5 +1,6 @@
 # Bonang_CSS_Portfolio
-Programmer: Clarisse Bonang
+Programmer: Clarisse Bonang <br/>
+Deployed link: https://csbonang.github.io/Bonang_CSS_Portfolio/
 
 # Description 
 The program displays a portifolio of a potential employee's deployed website. It satisfies the following requirements: 
