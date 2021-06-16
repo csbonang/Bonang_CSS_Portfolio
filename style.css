@@ -130,7 +130,7 @@ body {
    #contactMe_info
    {
        color:black; 
-       font-size: 50px;
+       font-size: 3vw;
        text-decoration: underline;
        text-decoration-color: var(--dark);
        padding-right: 5%;
