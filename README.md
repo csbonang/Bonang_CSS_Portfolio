@@ -23,6 +23,12 @@ Using a grid strengthens the flexibility of the portfolio. To be sure, it simpli
 # Screenshot 
 Top: ![Page1](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_1.PNG)
 Bottom: ![Page2](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_2.PNG)
+<br/>
+Please note that the user must login to their email account. 
+Then, the following image below will appear once they click Email Me under the Contact Me section. 
+<br/> 
+Email Pop-up: ![Email](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/email.PNG)
+
 # References
 Grid: 
 https://gridbyexample.com/examples/example12/ <br/>
