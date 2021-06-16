@@ -20,6 +20,8 @@ Each section of the portfolio has an assigned class to a specific grid area on t
 Using a grid strengthens the flexibility of the portfolio. To be sure, it simplifies revising and stylizing the program.  
 
 # Screenshot 
+![Snapshot Page1](/images/snapshot1.png)
+![Snapshot Page2](/images/snapshot2.png)
 
 # References
 Grid: 
