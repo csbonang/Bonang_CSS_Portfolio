@@ -145,7 +145,15 @@ body {
        width: 20%;
        font-size: 300%;
    }
-   
+   /* big image at top*/
+   .img_top
+   {
+       width:100%; 
+   }
+   .img_topImg 
+   {
+       width:100%; 
+   } 
    /* images on te left side */
    .imgLeft_position 
    {
