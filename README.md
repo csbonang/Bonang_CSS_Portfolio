@@ -2,7 +2,7 @@
 Programmer: Clarisse Bonang
 
 # Description 
-The program displays a portifolio of a potential employee's deployed website. It satifies the following requirements: 
+The program displays a portifolio of a potential employee's deployed website. It satisfies the following requirements: 
 
 1.  Upon loading the portfolio, the user is presented with the  developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 
