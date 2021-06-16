@@ -25,9 +25,9 @@ Format: ![Page1](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/imag
 Format: ![Page2](https://github.com/csbonang/Bonang_CSS_Portfolio/blob/main/images/snapshot_2.PNG)
 # References
 Grid: 
-https://gridbyexample.com/examples/example12/
+https://gridbyexample.com/examples/example12/ <br/>
 Image Url: 
-https://www.w3schools.com/html/html_images.asp
+https://www.w3schools.com/html/html_images.asp<br/>
 Image Text Position: 
 https://www.w3schools.com/howto/howto_css_image_text.asp
 Activities from class 
